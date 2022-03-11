@@ -1,12 +1,20 @@
+import "./Expenseitems.css";
 function ExpenseItem() {
-    return (
-      <div>
-        <h2>Expense Item!</h2>
-        <div> Food Rs 10 </div>
-        <div>Petrol Rs 100</div>
-        <div>Movies Rs 200</div>
+  return (
+    <div className="expense-item">
+      <div>Expense Item!</div>
+      <div className="expense-item__description">
+        <h2>food</h2>
+        <div className="expense-item__price"> Rs 10</div>
       </div>
-    );
-  }
-  export default ExpenseItem;
-  
+      <div className="expense-item">
+      <div>Expense Item!</div>
+      <div className="expense-item__description">
+        <h2>food</h2>
+        <div className="expense-item__price"> Rs 20</div>
+      </div>
+    </div>
+    </div>
+  );
+}
+export default ExpenseItem;
