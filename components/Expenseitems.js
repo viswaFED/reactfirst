@@ -1,5 +1,6 @@
 import "./Expenseitems.css";
 import ExpenseDate from "./ExpenseDate.js";
+/*import ExpenseDetails from "./ExpenseDetails";*/
 import React from "react";
 
 function ExpenseItem(props) {
