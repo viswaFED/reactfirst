@@ -1,20 +1,14 @@
 import "./Expenseitems.css";
-function ExpenseItem() {
-  return (
-    <div className="expense-item">
-      <div>Expense Item!</div>
-      <div className="expense-item__description">
-        <h2>food</h2>
-        <div className="expense-item__price"> Rs 10</div>
-      </div>
-      <div className="expense-item">
-      <div>Expense Item!</div>
-      <div className="expense-item__description">
-        <h2>food</h2>
-        <div className="expense-item__price"> Rs 20</div>
-      </div>
-    </div>
-    </div>
-  );
+import React from "react";
+
+function ExpenseItem(props) {
+  return<div className="expense-item">
+  <div>{props.date.toISOString()}</div>
+  <div>{props.location}</div>
+  <div className="expense-item__description">
+    <h2>{props.title}</h2>
+    <div className="expense-item__price"> {props.amount}</div>
+  </div>
+  </div>
 }
 export default ExpenseItem;
