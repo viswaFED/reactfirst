@@ -1,9 +1,8 @@
 import "./Expenseitems.css";
 import ExpenseDate from "./ExpenseDate.js";
-/*import ExpenseDetails from "./ExpenseDetails";*/
 import React from "react";
 
-function ExpenseItem(props) {
+const  ExpenseItem = (props) => {
   return (
     <div className="expense-item">
       <ExpenseDate date={props.date} />
@@ -14,7 +13,7 @@ function ExpenseItem(props) {
       </div>
      
       </div>
-    
+/**/
   );
 }
 export default ExpenseItem;
