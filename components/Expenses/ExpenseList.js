@@ -22,8 +22,6 @@ const ExpensesList = (props) => {
          </div>
     )};
 
-
- 
   return (
     <ul className='expenses-list'>
       {props.items.map((expense) => (
